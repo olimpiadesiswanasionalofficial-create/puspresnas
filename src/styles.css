@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Security guilloche fine-line pattern for official certificates */
+.bg-guilloche-pattern {
+  background-color: #ffffff;
+  background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#1e3a8a 0.75px, #ffffff 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Official gold foil gradient border */
+.certificate-frame {
+  border: 12px double #b48c36;
+  outline: 2px solid #1e3a8a;
+  outline-offset: -6px;
+}
+
+/* Clean print styling for printing verified certificate */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-certificate, #printable-certificate * {
+    visibility: visible;
+  }
+  #printable-certificate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border: 8px double #b48c36 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Verifikasi Sertifikat Resmi OSN 2026",
+  "description": "Hasil Verifikasi Resmi Sertifikat Olimpiade Siswa Nasional (OSN) 2026, LKP Prestasi Nusantara, Puspresnas, dan Rumah Pendidikan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
